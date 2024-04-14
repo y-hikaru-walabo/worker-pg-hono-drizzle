@@ -1,0 +1,2 @@
+# 環境変数
+PG_CONNECTION_STRING

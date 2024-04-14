@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "db:generate": "drizzle-kit generate:pg",
+    "db:migrate": "pnpm tsx db/migrate",
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.30.8",
+    "hono": "^4.2.3",
+    "pg": "^8.11.5",
+    "tsx": "^4.7.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240403.0",
+    "@types/pg": "^8.11.5",
+    "dotenv": "^16.4.5",
+    "drizzle-kit": "^0.20.14",
+    "wrangler": "^3.47.0"
+  }
+}
